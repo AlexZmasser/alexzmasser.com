@@ -1,0 +1,11 @@
+.layout {
+
+    display: grid;
+    grid:
+      "sidebar body" 1fr
+      / 1fr auto;
+    gap: 8px;
+  }
+  
+  .sidebar { grid-area: sidebar; }
+  .body { grid-area: body; }
