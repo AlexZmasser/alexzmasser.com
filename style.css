@@ -1,11 +1,39 @@
-.layout {
+body {
+  font-size: 26px;
+  font-family: "Futura";
+}
+h1,h2,h3 {
+  font-family: "Playfair Display";
+}
 
-    display: grid;
-    grid:
-      "sidebar body" 1fr
-      / 1fr auto;
-    gap: 8px;
-  }
-  
-  .sidebar { grid-area: sidebar; }
-  .body { grid-area: body; }
+ul {
+  list-style-type: none;
+  margin: -8px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: "Playfair Display";
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
